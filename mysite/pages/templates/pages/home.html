@@ -1,6 +1,16 @@
-{% extends "base.html" %}
-{% block content %}
-<h1>Home page</h1>  
-{% endblock content %}
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Members</h1>
+  
+<ul>
+  {% for x in students %}
+    <li>{{ x.firstname }} {{ x.lastname }}</li>
+  {% endfor %}
+</ul>
+
+</body>
+</html>
 
 
