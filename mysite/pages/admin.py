@@ -14,3 +14,7 @@ from django.contrib import admin
 #     ordering=('publish','status')
 #     list_editable=('status',)
 #     list_display_links=('slug',)
+
+# admin.site.register(Post)
+
+
