@@ -1,0 +1,24 @@
+
+{% extends 'base.html' %}
+
+{% block title %}Book Detail - Bookstore{% endblock %}
+
+{% block content %}
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ book.title }} - Book Details</title>
+</head>
+<body>
+    <h1>{{ book.title }}</h1>
+    <p><strong>Author:</strong> {{ book.author }}</p>
+    <p><strong>Description:</strong> {{ book.description }}</p>
+    <p><strong>Published Date:</strong> {{ book.published_date }}</p>
+    <p><strong>Price:</strong> ${{ book.price }}</p>
+    <img src="{{ book.cover_image.url }}" alt="{{ book.title }} Cover Image" style="max-width: 200px;">
+</body>
+</html>
+
+{% endblock %}
